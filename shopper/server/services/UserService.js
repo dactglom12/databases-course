@@ -1,4 +1,4 @@
-const UserModel = require('../models/mongoose/User');
+const UserModel = require("../models/mongoose/User");
 
 class UserService {
   static async getAll() {
@@ -20,7 +20,7 @@ class UserService {
     user.email = data.email;
 
     // Only set the password if it was modified
-    if(data.password) {
+    if (data.password) {
       user.password = data.password;
     }
 
